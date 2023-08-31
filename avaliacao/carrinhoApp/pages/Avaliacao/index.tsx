@@ -1,9 +1,23 @@
 import React from "react";
-import { Text } from "react-native/types";
+import {Text, StyleSheet, Dimensions } from 'react-native';
+import topo from "../../../assets/topo.png";
+
+const width = Dimensions.get("screen").width;
 
 export default function Avaliacao(){
-    return 
-    <Text>
- isso ai 
-    </Text>
+    return(
+        <>
+     <Image source={topo} style={estilos.topo}/>
+<Text>  
+la floristería del amor
+</Text>
+        </>
+    );
 }
+
+const estilos = StyleSheet.create({
+    topo: {
+        width: "100%",
+        height: (578 / 768) * width,
+    },
+})
