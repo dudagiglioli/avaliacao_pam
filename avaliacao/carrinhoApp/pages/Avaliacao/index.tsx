@@ -9,12 +9,12 @@ export default function Avaliacao(){
     return<>
 
      <Image style={estilos.topo} source={topo}/>
-     <Text style={estilos.titulo}>La Floristería Del Amor</Text>
 
      <View style={estilos.inicio}>
 
         <Image style={estilos.logo} source={logo}/>
         <Text style={estilos.text1}>A floricultura ideal para o melhor presente!</Text>
+
 
      </View>
 
@@ -34,7 +34,7 @@ const estilos = StyleSheet.create({
 
     titulo: {
         width: "100%",
-        position: "absolute",
+        position: "absolute", 
         color: "black",
         textAlign: "center",
         fontSize: 30,
@@ -49,10 +49,10 @@ const estilos = StyleSheet.create({
       },
     
     text1:{
-        fontSize: 20,
-        lineHeight: 42,
-        color: "#464646",
-        fontFamily:"SatisfyRegular"
+      fontSize: 17,
+      lineHeight: 26,
+      padding: 26,
+      fontFamily: "SatisfyRegular"
     },
 
     logo: {
@@ -62,7 +62,7 @@ const estilos = StyleSheet.create({
 
     text2: {
             color: "#A3A3A3",
-            fontFamily: "MontserratItalic"
+            fontFamily: "SatisfyRegular"
           },
       
 })
